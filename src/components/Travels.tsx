@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { FC, useEffect, useRef } from "react";
+//@ts-expect-error
 import World from "@svg-maps/world";
 import { SVGMap } from "react-svg-map";
 import "react-svg-map/lib/index.css";
@@ -140,6 +142,8 @@ export const Travels: FC = () => {
                     {t("travels.title")}
                 </h1>
                 <div className="hidden md:block">
+                    {/* 
+                    // @ts-ignore */}
                     <SVGMap
                         map={World}
                         className="world-map"

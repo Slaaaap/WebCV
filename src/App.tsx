@@ -8,7 +8,7 @@ import { ScrollSection } from "./components/ScrollSection";
 import { Projects } from "./components/Projects";
 import { Footer } from "./components/layout/Footer";
 import { Travels } from "./components/Travels";
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "./components/ui/sonner";
 
 function App() {
     useEffect(() => {
