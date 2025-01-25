@@ -1,0 +1,190 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+    }
+}
+
+.dark.html {
+    background-color: #191b1f;
+}
+
+.backdrop {
+    background-image: radial-gradient(transparent 1px, #fff 1px);
+    background-size: 3px 3px;
+    backdrop-filter: saturate(50%) blur(6px);
+}
+.dark .backdrop {
+    background-image: radial-gradient(transparent 1px, #191b1f 1px);
+}
+
+.blinking-cursor {
+    font-weight: 400;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+#tsparticles {
+    height: 100%;
+}
+
+/* --- */
+
+:root {
+    --color1: rgba(252, 252, 252, 0.5);
+    --color2: rgba(255, 255, 255, 0.5);
+}
+
+.movie-card {
+    width: 100%;
+    max-width: 325px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    /* margin: 20px; */
+    z-index: 10;
+    touch-action: none;
+    border-radius: 12px;
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    will-change: transform, filter;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform-origin: center;
+}
+
+/* .movie-card:hover {
+    box-shadow: -20px -20px 30px -25px #ccc, 20px 20px 30px -25px #ccc,
+        -7px -7px 10px -5px #ccc, 7px 7px 10px -5px #ccc, 0 0 13px 4px #ccc,
+        0 20px 35px -20px #ccc;
+    cursor: pointer;
+} */
+
+.movie-card:before,
+.movie-card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    mix-blend-mode: color-dodge;
+    transition: all 0.33s ease;
+}
+
+.movie-card:before {
+    background-position: 50% 50%;
+    background-size: 300% 300%;
+    background-image: linear-gradient(
+        115deg,
+        transparent 0%,
+        var(--color1) 25%,
+        transparent 47%,
+        transparent 53%,
+        var(--color2) 75%,
+        transparent 100%
+    );
+    opacity: 0.5;
+    filter: brightness(0.5) contrast(1);
+    z-index: 1;
+}
+
+.movie-card:after {
+    opacity: 1;
+    background-position: 50% 50%;
+    background-size: 160%;
+    background-blend-mode: overlay;
+    z-index: 2;
+    filter: brightness(1) contrast(1);
+    transition: all 0.33s ease;
+    mix-blend-mode: color-dodge;
+    opacity: 0.75;
+}
+
+.movie-card.active:after,
+.movie-card:hover:after {
+    filter: brightness(1) contrast(1);
+    opacity: 1;
+}
+
+.movie-card.active,
+.movie-card:hover {
+    animation: none;
+    transition: box-shadow 0.1s ease-out;
+}
+
+.movie-card.active:before,
+.movie-card:hover:before {
+    animation: none;
+    background-image: linear-gradient(
+        110deg,
+        transparent 25%,
+        var(--color1) 48%,
+        var(--color2) 52%,
+        transparent 75%
+    );
+    background-position: 50% 50%;
+    background-size: 250% 250%;
+    opacity: 0.88;
+    filter: brightness(0.66) contrast(1.33);
+    transition: none;
+}
+
+.movie-card.active:before,
+.movie-card:hover:before,
+.movie-card.active:after,
+.movie-card:hover:after {
+    animation: none;
+    transition: none;
+}
+
+.demo,
+.movie-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    perspective: 2000px;
+    position: relative;
+    z-index: 1;
+    transform: translate3d(0.1px, 0.1px, 0.1px);
+}
+
+.world-map {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    path {
+        stroke: #191b1f;
+        stroke-width: 0.2;
+        fill: transparent;
+    }
+    path:hover {
+        fill: transparent;
+    }
+    path:focus {
+        fill: transparent;
+    }
+    path:active {
+        fill: #191b1f;
+    }
+}
+
+.dark .world-map path {
+    stroke: white;
+}
+
+.svg-map__location {
+    transition: fill 0.2s;
+}

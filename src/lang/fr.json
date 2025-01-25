@@ -1,0 +1,73 @@
+{
+    "translation": {
+        "hero": {
+            "preTypewriter": "Je",
+            "typewriter1": "m'appelle Matt.",
+            "typewriter2": "suis un développeur.",
+            "typewriter3": "travaille chez Kanbios."
+        },
+        "about": {
+            "title": "À propos de moi",
+            "greeting": "Bonjouuuur ! 👋🏻",
+            "text1": "👨🏻‍💻 Passionné depuis mon jeune âge par l'informatique, j'ai aujourd'hui la chance d'en faire mon métier. Chez Kanbios, je travaille en tant qu'ingénieur front-end, poste qui consiste à concevoir et mettre en place des interfaces graphiques pour des sites internet ou des applications web.",
+            "text2": "🎯 En parlant de ça, vous avez besoin d’une web app, d’un site ou d’un logiciel ? Chez Kanbios, nous vous aidons à concrétiser la construction ou la refonte de votre produit digital.",
+            "contact": "Nous contacter"
+        },
+        "jobs": {
+            "title": "Expériences professionnelles",
+            "stageBTS": {
+                "title": "Stage BTS - Développeur Web",
+                "location": "URSSAF - Bordeaux",
+                "date": "2016",
+                "description": "Réalisation d'un intranet gérant la réservation d’ordinateurs portables pour les employés de l'URSSAF Aquitaine."
+            },
+            "stageA2": {
+                "title": "Stage CESI A2 - Développeur Web",
+                "location": "adopt' Parfums - Bordeaux",
+                "date": "2017",
+                "description": "- Refonte de l'intranet utilisé par les 170 boutiques de l'entreprise <br /> - Traitement de fichiers en PHP & appel au Web Service Colissimo <br /> - Réalisation d'une application web utilisée par les franchisés et dans les DOM-TOM."
+            },
+            "stageA3": {
+                "title": "Stage CESI A3 - Développeur React",
+                "location": "SMARTBOTTLE - Bordeaux",
+                "description": "- Amélioration d'un modèle de machine learning <br /> - Développement d'un utilitaire en React Native & découverte du SDK Flutter <br /> - Réalité augmentée : ARKit & ARCore <br /> - Développement d'un site web en React JS",
+                "date": "2019"
+            },
+            "stageA4": {
+                "title": "Stage à l'étranger CESI A4 - Développeur Angular",
+                "location": "STYNG - Karlsruhe, Allemagne",
+                "description": "- Multiples missions sur le site de l'entreprise, développement en Angular 8, Typescript & NodeJS. <br /> - Optimisation du SEO",
+                "date": "2019-2020"
+            },
+            "stageA5": {
+                "title": "Stage de fin d'études - Développeur Vue & Symfony",
+                "location": "Jarvis Legal - Bordeaux",
+                "description": "- Déploiement du site en 5 langues différentes <br /> - Réalisation d'une marketplace personnalisée",
+                "date": "2021"
+            },
+            "freelance": {
+                "title": "Développeur web freelance",
+                "location": "Région de Bordeaux",
+                "date": "2019 - aujourd'hui"
+            },
+            "today": {
+                "title": "Ingénieur front-end",
+                "location": "Kanbios - Paris & Bordeaux",
+                "date": "2021 - aujourd'hui"
+            }
+        },
+        "projects": {
+            "title": "Les projets sur lesquels j'ai travaillé",
+            "ada": "Leader français de la location de voitures avec plus de 1000 points de vente.",
+            "seafood": "Site e-commerce pour un pêcheur et vendeur de fruits de mer dans le Sud de la France.",
+            "rockthelaw": "Site vitrine pour une agence de growth marketing.",
+            "reboul": "Site vitrine pour un cabinet de conseil en stratégie.",
+            "styng": "Site vitrine et application web autour du thème du tatouage.",
+            "sba": "Site vitrine et plateforme de formation sur le thème du luxe.",
+            "extrastudent": "Réseau social pour étudiants et lycéens. Création d'un site web et d'une application mobile."
+        },
+        "travels": {
+            "title": "J'ai voyagé..."
+        }
+    }
+}

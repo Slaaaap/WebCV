@@ -1,0 +1,73 @@
+{
+    "translation": {
+        "hero": {
+            "preTypewriter": "I",
+            "typewriter1": "am Matt.",
+            "typewriter2": "am a developer.",
+            "typewriter3": "work at Kanbios."
+        },
+        "about": {
+            "title": "About me",
+            "greeting": "Hellooo ! 👋🏻",
+            "text1": "👨🏻‍💻 I've had a passion for IT since I was very young, and now I'm lucky enough to be able to make a career out of it. At Kanbios, I work as a front-end engineer, a job that involves designing and implementing graphical interfaces for websites or web applications.",
+            "text2": "🎯 Speaking of which, do you need a web app, website or software? At Kanbios, we can help you build or redesign your digital product.",
+            "contact": "Contact us"
+        },
+        "jobs": {
+            "title": "Professional experience",
+            "stageBTS": {
+                "title": "BTS Internship - Web Developer",
+                "location": "URSSAF - Bordeaux",
+                "date": "2016",
+                "description": "Creation of an intranet to manage laptop reservations for URSSAF Aquitaine employees."
+            },
+            "stageA2": {
+                "title": "CESI A2 Internship - Web Developer",
+                "location": "adopt' Parfums - Bordeaux",
+                "date": "2017",
+                "description": "- Overhaul of the intranet used by the company's 170 shops <br /> - Processing of files in PHP and use of the Colissimo Web Service <br /> - Creation of a web application used by franchisees and in French overseas departments and territories."
+            },
+            "stageA3": {
+                "title": "CESI A3 Internship - React Developer",
+                "location": "SMARTBOTTLE - Bordeaux",
+                "description": "- Improving a machine learning model <br /> - Developing a utility in React Native & discovering the Flutter SDK <br /> - Augmented reality: ARKit & ARCore <br /> - Developing a website in React JS",
+                "date": "2019"
+            },
+            "stageA4": {
+                "title": "Internship abroad CESI A4 - Angular Developer",
+                "location": "STYNG - Karlsruhe, Germany",
+                "description": "- Multiple missions on the company's website, development in Angular 8, Typescript & NodeJS. <br /> - SEO optimization",
+                "date": "2019-2020"
+            },
+            "stageA5": {
+                "title": "Final year internship - Vue & Symfony developer",
+                "location": "Jarvis Legal - Bordeaux",
+                "description": "- Deployment of the site in 5 different languages <br /> - Creation of a customized marketplace",
+                "date": "2021"
+            },
+            "freelance": {
+                "title": "Freelance web developer",
+                "location": "Bordeaux region",
+                "date": "2019 - today"
+            },
+            "today": {
+                "title": "Front-end engineer",
+                "location": "Kanbios - Paris & Bordeaux",
+                "date": "2021 - today"
+            }
+        },
+        "projects": {
+            "title": "Projects I've worked on",
+            "ada": "France's leading car rental company with over 1,000 outlets.",
+            "seafood": "E-commerce site for a fisherman and seafood seller in the South of France.",
+            "rockthelaw": "Showcase site for a growth marketing agency.",
+            "reboul": "Showcase website for a strategy consulting firm.",
+            "styng": "Showcase website and web application on the theme of tattoos.",
+            "sba": "Showcase website and training platform on the theme of luxury.",
+            "extrastudent": "Social network for students. Creation of a website and mobile application."
+        },
+        "travels": {
+            "title": "I've traveled..."
+        }
+    }
+}
