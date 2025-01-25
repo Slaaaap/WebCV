@@ -88,9 +88,39 @@ export const Projects: FC = () => {
                 className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 mx-auto max-w-5xl"
                 ref={containerRef}>
                 {projects.map((project) => (
-                    <div className="movie-cards fade-project w-fit mx-auto">
-                        <MetalCard project={project} key={project.id} />
-                    </div>
+                    <>
+                        <div className="hidden lg:flex">
+                            <div className="movie-cards fade-project w-fit mx-auto">
+                                <MetalCard project={project} key={project.id} />
+                            </div>
+                        </div>
+
+                        <div className="block lg:hidden">
+                            <div className="bg-white border dark:border-0 dark:bg-[#212529] hover:shadow-lg max-w-[350px] mx-auto rounded-[12px] h-full">
+                                <a
+                                    className="flex flex-grow "
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noreferrer">
+                                    <div className="p-4 font-raleway h-full">
+                                        <div className="flex items-center justify-between gap-2">
+                                            <img
+                                                src={project.image}
+                                                alt="STYNG"
+                                                className="w-fit max-w-20 h-16 dark:bg-white rounded p-1.5 object-contain object-left"
+                                            />
+                                            <h2 className="text-xl font-semibold">
+                                                {project.title}
+                                            </h2>
+                                        </div>
+                                        <p className="text-justify mb-0 mt-4 dark:text-white/60">
+                                            {project.description}
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </>
                 ))}
             </div>
         </div>

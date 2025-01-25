@@ -6,12 +6,9 @@ import World from "@svg-maps/world";
 import { SVGMap } from "react-svg-map";
 import "react-svg-map/lib/index.css";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useTranslationHook } from "@/hooks/useTranslation";
 import { toast } from "sonner";
 import { countries } from "@/utils/countries";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export const Travels: FC = () => {
     const mapRef = useRef<HTMLDivElement>(null);
@@ -57,7 +54,7 @@ export const Travels: FC = () => {
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: "#worldMap",
-                    start: "top-=80px top",
+                    start: "top-=30px top",
                     end: `+=${totalScrollDistance}`,
                     pin: true,
                     scrub: true,
