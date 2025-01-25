@@ -9,7 +9,7 @@ export const About: FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:h-[calc(100vh-60px)] max-w-7xl mx-auto">
             <div className="flex items-center justify-center">
                 <img
-                    src="src/assets/img/profil.jpg"
+                    src="public/assets/img/profil.jpg"
                     alt="portrait"
                     className="w-[400px] rounded-xl mt-16"
                 />
